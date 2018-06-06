@@ -1,0 +1,26 @@
+.form-control {
+    font-size: var(--theia-ui-font-size1) !important;
+    line-height: var(--theia-content-line-height) !important;
+    border: 1px solid var(--theia-border-color1) !important;
+    background: var(--theia-layout-color2) !important;
+    color: var(--theia-ui-font-color1) !important;
+    padding: 0px !important;
+    padding-left: 5px !important;
+    border-radius: 0px !important;
+}
+
+input.form-control {
+    height: 25px !important;
+}
+
+textarea.form-control {
+    min-height: 25px !important;
+    resize: vertical !important;
+}
+
+.btn {
+    border: none !important;
+    border-radius: 1px !important;
+    padding: 4px 9px !important;
+    font-size: var(--theia-ui-font-size1) !important;
+}

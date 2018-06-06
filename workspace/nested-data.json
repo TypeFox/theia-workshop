@@ -1,0 +1,23 @@
+{
+  "title": "Theia Workshop - Exercises",
+  "tasks": [
+    {
+      "title": "Exercise-0: Build Theia Application",
+      "done": true
+    },
+    {
+      "title": "Exercise-1: Implement Open Handler",
+      "done": true
+    },
+    {
+      "done": true,
+      "title": "Exercise-2: Improve Greeting React Component"
+    },
+    {
+      "done": false,
+      "title": "Exercise-3: Implement UI Schema Support for JSON-Form"
+    }
+  ],
+  "$schema": "nested-schema.json",
+  "$uiSchema": "nested-ui-schema.json"
+}
