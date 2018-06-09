@@ -3,19 +3,23 @@
   "tasks": [
     {
       "title": "Exercise-0: Build Theia Application",
-      "done": true
+      "done": true,
+      "details": "In this exercise, you learn:\n- the structure of a Theia extension project;\n- how to create Theia application, build and run it;\n- how to configure Theia extension with the dependency injection."
     },
     {
       "title": "Exercise-1: Implement Open Handler",
-      "done": true
+      "done": true,
+      "details": "In this exercise, you learn how to add a new widget to the shell and get familiar with widget's lifecycle."
     },
     {
       "done": true,
-      "title": "Exercise-2: Improve Greeting React Component"
+      "title": "Exercise-2: Improve Greeting React Component",
+      "details": "In this exercise, you learn basics of React and how to integrate it."
     },
     {
       "done": true,
-      "title": "Exercise-3: Implement UI Schema Support for JSON-Form"
+      "title": "Exercise-3: Implement UI Schema Support for JSON-Form",
+      "details": "In this exercise, you learn how to access file models and connect them with widgets."
     }
   ],
   "$schema": "nested-schema.json",
