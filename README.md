@@ -1,73 +1,16 @@
-# Hello World Extension Example
-The example of how to build the Theia-based applications with the jsonschema-form-extension.
+# Exercise 3: Implement UI Schema Support for JSON-Form Widget
 
-## Getting started
+[JsonschemaFormView](jsonschema-form-extension/src/browser/jsonschema-form-view.tsx) is a React component that allows building HTML forms based on JSON-schema for a JSON-file.
+If a JSON-file gets changed then an HTML form gets updated and vice versa. A JSON-schema file is referenced relative to a JSON-file via a special property `$schema`.
+ 
+`JsonschemaFormView` is based on [react-jsonschema-form](https://github.com/mozilla-services/react-jsonschema-form) component that allows customization of rendering with JSON via `uiSchema` property: https://github.com/mozilla-services/react-jsonschema-form#form-customization.
 
-Install [nvm](https://github.com/creationix/nvm#install-script).
+Your task is:
+- to add a `$uiSchema` property to a JSON-file to access a UI JSON-schema file and customize rendering;
+- whenever a UI JSON-Schema file gets changed then an HTML form should be updated as displayed below.
 
-    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh | bash
+![uischema](https://user-images.githubusercontent.com/3082655/41195122-fe170490-6c27-11e8-81fc-d1accd89d971.gif)
 
-Install npm and node.
+## The solution
 
-    nvm install 8
-    nvm use 8
-
-Install yarn.
-
-    npm install -g yarn
-
-## Running the browser example
-
-    yarn rebuild:browser
-    cd browser-app
-    yarn start
-
-Open http://localhost:3000 in the browser.
-
-## Running the Electron example
-
-    yarn rebuild:electron
-    cd electron-app
-    yarn start
-
-## Developing with the browser example
-
-Start watching of the hello world extension.
-
-    cd jsonschema-form-extension
-    yarn watch
-
-Start watching of the browser example.
-
-    yarn rebuild:browser
-    cd browser-app
-    yarn watch
-
-Launch `Start Browser Backend` configuration from VS code.
-
-Open http://localhost:3000 in the browser.
-
-## Developing with the Electron example
-
-Start watching of the hello world extension.
-
-    cd jsonschema-form-extension
-    yarn watch
-
-Start watching of the electron example.
-
-    yarn rebuild:electron
-    cd electron-app
-    yarn watch
-
-Launch `Start Electron Backend` configuration from VS code.
-
-## Publishing jsonschema-form-extension
-
-Create a npm user and login to the npm registry, [more on npm publishing](https://docs.npmjs.com/getting-started/publishing-npm-packages).
-
-    npm login
-
-Publish packages with lerna to update versions properly across local packages, [more on publishing with lerna](https://github.com/lerna/lerna#publish).
-
-    npx lerna publish
+When you finish, compare your solution with the [suggested](https://github.com/TypeFox/ecf2018-theia-workshop/blob/1fee6cfddbaa6512db227f36efb8f07f0bd3f205/jsonschema-form-extension/src/browser/jsonschema-form-view.tsx#L13).
