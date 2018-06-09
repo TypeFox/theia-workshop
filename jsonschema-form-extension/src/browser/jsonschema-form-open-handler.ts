@@ -13,6 +13,12 @@ export class JsonschemaFormOpenHandler extends WidgetOpenHandler<JsonschemaFormW
     @inject(EditorManager)
     protected readonly editorManager: EditorManager;
 
+    /**
+     * Test whether this handler can open the given URI for given options.
+     * Return a positive number if this handler can open; otherwise it cannot.
+     *
+     * A returned value indicating a priority of this handler.
+     */
     canHandle(uri: URI): number {
         return this.editorManager.canHandle(uri) / 2;
     }
