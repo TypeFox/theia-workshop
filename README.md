@@ -1,8 +1,6 @@
 # Exercise 0: Build Theia Application
 
-<a href="https://gitpod.io#https://github.com/TypeFox/ecf2018-theia-workshop/tree/exercise-0" target="_blank">
-<img src="https://user-images.githubusercontent.com/914497/41273050-1f1658d4-6e18-11e8-884e-7270d4ac4923.gif" />
-</a>
+[![Gitpod - code now](https://img.shields.io/badge/Gitpod-code%20now-blue.svg?longCache=true)](https://gitpod.io#https://github.com/TypeFox/theia-workshop/tree/exercise-0)
 
 It is the warm-up exercise to get your familiar with the project structure and how to build and run it.
 
