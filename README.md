@@ -16,10 +16,10 @@ For each exercise, there are 2 branches in the repository: one with an exercise 
 
 During the workshop, you will use Theia-based Online IDE for GitHub - Gitpod.
 To start with exercises you only need the modern browser. For the best experience, please use [Chrome](https://www.google.com/chrome/).
-You can open any branch on GitHub by prefixing its URL with `gitpod.io#`. 
+You can open any branch on GitHub by prefixing its URL with `gitpod.io#`.
 For example, to open Gitpod for the exercise 0:
-- go to exercise's branch - https://github.com/TypeFox/ecf2018-theia-workshop/tree/exercise-0
-- prefix it with `gitpod.io#` - gitpod.io#https://github.com/TypeFox/ecf2018-theia-workshop/tree/exercise-0
+- go to exercise's branch - https://github.com/TypeFox/theia-workshop/tree/exercise-0
+- prefix it with `gitpod.io#` - gitpod.io#https://github.com/TypeFox/theia-workshop/tree/exercise-0
 
 ### Exercise 0: Build Theia Application
 
