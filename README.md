@@ -13,7 +13,7 @@ This project was scaffolded with a [Theia extension generator](https://github.co
 
 - [jsonschema-form-extension](jsonschema-form-extension/package.json) - a Theia extension package
 - [browser-app](browser-app/package.json) - a Theia application for the browser environment composed of basic Theia extensions and `jsonschema-form-extension`
-- [electon-app](electron-app/package.json) - a Theia application for the desktop environment
+- [electron-app](electron-app/package.json) - a Theia application for the desktop environment
 - [root](package.json) - a root package to wire all local packages (workspaces)
 
 A repo consisting of several packages is called a monorepo. We use [yarn](https://yarnpkg.com/lang/en/) to manage packages since it has better monorepo support: https://yarnpkg.com/lang/en/docs/workspaces/.
