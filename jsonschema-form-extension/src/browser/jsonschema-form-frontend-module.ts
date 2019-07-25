@@ -8,7 +8,6 @@ import { ThemeService } from "@theia/core/lib/browser/theming";
 import { ContainerModule } from "inversify";
 import { JsonschemaFormWidget, JsonschemaFormWidgetOptions } from './jsonschema-form-widget';
 import { JsonschemaFormOpenHandler } from './jsonschema-form-open-handler';
-import URI from '@theia/core/lib/common/uri';
 
 monaco.languages.json.jsonDefaults.setDiagnosticsOptions({
     validate: false,
@@ -43,11 +42,9 @@ export default new ContainerModule(bind => {
     bind(OpenHandler).to(JsonschemaFormOpenHandler).inSingletonScope();
     bind(WidgetFactory).toDynamicValue(({ container }) => ({
         id: JsonschemaFormWidget.id,
-        createWidget: (uri: string) => {
+        createWidget: (options: JsonschemaFormWidgetOptions) => {
             const child = container.createChild();
-            child.bind(JsonschemaFormWidgetOptions).toConstantValue({
-                uri: new URI(uri)
-            });
+            child.bind(JsonschemaFormWidgetOptions).toConstantValue(options);
             child.bind(JsonschemaFormWidget).toSelf();
             return child.get(JsonschemaFormWidget);
         }
