@@ -10,7 +10,7 @@ import { JsonschemaFormView } from "./jsonschema-form-view";
 
 export const JsonschemaFormWidgetOptions = Symbol('JsonschemaFormWidgetOptions');
 export interface JsonschemaFormWidgetOptions {
-    uri: URI
+    uri: string
 }
 
 @injectable()
@@ -30,8 +30,8 @@ export class JsonschemaFormWidget extends BaseWidget {
     @postConstruct()
     protected async init(): Promise<void> {
         const { uri } = this.options;
-        this.id = JsonschemaFormWidget.id + ':' + uri.toString()
-        this.title.label = 'Form ' + uri.displayName;
+        this.id = JsonschemaFormWidget.id + ':' + uri
+        this.title.label = 'Form ' + new URI(uri).displayName;
         this.title.closable = true;
         
         this.scrollOptions = {};
