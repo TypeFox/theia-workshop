@@ -16,7 +16,7 @@ export class JsonschemaFormView extends React.Component<{}, Greeting> {
         super(props);
         this.state = {
             name: 'World',
-            at: 'EclipseCon France 2018'
+            at: 'Theia Workshop'
         }
     }
 
