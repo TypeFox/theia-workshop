@@ -5,7 +5,7 @@ export interface Greeting {
 }
 export class GreetingView extends React.Component<Greeting> {
     render(): JSX.Element {
-        return <h1>Hello {this.props.name} at EclipseCon France 2018!</h1>;
+        return <h1>Hello {this.props.name} at Theia Workshop!</h1>;
     }
 }
 
