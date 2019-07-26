@@ -1,5 +1,22 @@
+image:
+  file: .gitpod.dockerfile
+tasks:
+  - init: yarn
+    command: |
+      gp sync-done init
+      yarn --cwd jsonschema-form-extension watch
+  - command: |
+      gp sync-await init
+      yarn --cwd browser-app watch
+    name: Watch browser-app
+    openMode: split-right
+  - command: |
+      gp sync-await init
+      yarn --cwd browser-app start ../workspace
+    name: Run browser-app
+    openMode: tab-after
 ports:
   - port: 3000
-    protocol: "http"
-tasks:
-  - command: "yarn && cd browser-app && yarn start --hostname 0.0.0.0 ../workspace"
+github:
+  prebuilds:
+    branches: true
