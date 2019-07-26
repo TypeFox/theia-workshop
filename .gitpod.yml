@@ -1,5 +1,10 @@
+image:
+  file: .gitpod.dockerfile
+tasks:
+  - init: yarn
+    command: yarn --cwd browser-app start ../workspace
 ports:
   - port: 3000
-    protocol: "http"
-tasks:
-  - command: "yarn && cd browser-app && yarn start --hostname 0.0.0.0 ../workspace"
+github:
+  prebuilds:
+    branches: true
