@@ -1,3 +1,5 @@
 ports:
   - port: 3000
-    protocol: "http"
+github:
+  prebuilds:
+    branches: true
