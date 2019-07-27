@@ -9,11 +9,6 @@ import { ContainerModule } from "inversify";
 import { JsonschemaFormWidget, JsonschemaFormWidgetOptions } from './jsonschema-form-widget';
 import { JsonschemaFormOpenHandler } from './jsonschema-form-open-handler';
 
-monaco.languages.json.jsonDefaults.setDiagnosticsOptions({
-    validate: false,
-    allowComments: true
-});
-
 const bootstrapLink = document.createElement("link");
 bootstrapLink.rel = 'stylesheet';
 document.head.appendChild(bootstrapLink);
