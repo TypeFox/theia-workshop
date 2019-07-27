@@ -24,7 +24,7 @@ export class JsonschemaFormWidget extends BaseWidget {
     @inject(MonacoTextModelService)
     protected readonly modelService: MonacoTextModelService;
 
-    protected viewNode: HTMLDivElement;    
+    protected viewNode: HTMLDivElement;
     protected reference: Reference<MonacoEditorModel> | undefined;
 
     @postConstruct()
@@ -33,7 +33,7 @@ export class JsonschemaFormWidget extends BaseWidget {
         this.id = JsonschemaFormWidget.id + ':' + uri
         this.title.label = 'Form ' + new URI(uri).displayName;
         this.title.closable = true;
-        
+
         this.scrollOptions = {};
         this.viewNode = document.createElement('div');
         this.viewNode.style.paddingLeft = '15px';
@@ -41,7 +41,7 @@ export class JsonschemaFormWidget extends BaseWidget {
         this.node.appendChild(this.viewNode);
         this.toDispose.push(Disposable.create(() => ReactDOM.unmountComponentAtNode(this.viewNode)));
 
-        const reference = await this.modelService.createModelReference(uri);
+        const reference = await this.modelService.createModelReference(new URI(uri));
         if (this.toDispose.disposed) {
             reference.dispose();
             return;
