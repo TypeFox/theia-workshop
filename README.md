@@ -20,21 +20,21 @@ For example, to open Gitpod for the exercise 0:
 - go to the exercise's branch - https://github.com/TypeFox/theia-workshop/tree/exercise-0
 - prefix it with `gitpod.io#` - [https://gitpod.io#https://github.com/TypeFox/theia-workshop/tree/exercise-0](https://gitpod.io/#https://github.com/TypeFox/theia-workshop/tree/exercise-0)
 
-### Exercise 0: Build Theia Application
+### [Exercise 0: Build Theia Application](https://github.com/TypeFox/theia-workshop/tree/exercise-0#exercise-0-build-theia-application)
 
 In this exercise, you learn:
 - the structure of a Theia extension project;
 - how to create a Theia application, build and run it;
 - how to configure a Theia extension with dependency injection.
 
-### Exercise 1: Implement JSON-Form Widget Open Handler
+### [Exercise 1: Implement JSON-Form Widget Open Handler](https://github.com/TypeFox/theia-workshop/tree/exercise-1#exercise-1-implement-json-form-widget-open-handler)
 
 In this exercise, you learn how to add a new widget to the shell and get familiar with widget's lifecycle.
 
-### Exercise 2: Improve Greeting React Component
+### [Exercise 2: Improve Greeting React Component](https://github.com/TypeFox/theia-workshop/tree/exercise-2#exercise-2-improve-greeting-react-component)
 
 In this exercise, you learn basics of React and how to integrate it.
 
-### Exercise 3: Implement UI Schema Support for JSON-Form Widget
+### [Exercise 3: Implement UI Schema Support for JSON-Form Widget](https://github.com/TypeFox/theia-workshop/tree/exercise-3#exercise-3-implement-ui-schema-support-for-json-form-widget)
 
 In this exercise, you learn how to access file models and connect them with widgets.
