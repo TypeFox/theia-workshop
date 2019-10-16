@@ -1,3 +1,5 @@
+image:
+  file: .gitpod.dockerfile
 github:
   prebuilds:
     branches: true
