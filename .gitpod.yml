@@ -4,15 +4,18 @@ tasks:
   - init: yarn
     command: |
       gp sync-done init
-      yarn --cwd jsonschema-form-extension watch
+      cd jsonschema-form-extension
+      yarn watch
   - command: |
       gp sync-await init
-      yarn --cwd browser-app watch
+      cd browser-app
+      yarn watch
     name: Watch browser-app
     openMode: split-right
   - command: |
       gp sync-await init
-      yarn --cwd browser-app start ../workspace
+      cd browser-app
+      yarn start ../workspace
     name: Run browser-app
     openMode: tab-after
 ports:

@@ -1,6 +1,6 @@
 # Exercise 1: Implement JSON-Form Widget Open Handler
 
-[![Gitpod - code now](https://img.shields.io/badge/Gitpod-code%20now-blue.svg?longCache=true)](https://gitpod.io#https://github.com/TypeFox/theia-workshop/tree/exercise-1)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/TypeFox/theia-workshop/tree/exercise-1)
 
 Your first exercise is to implement for which file the JSON-Form widget should be opened, and when it should be used as a primary widget.
 Right now, it can be opened for any file, and an editor widget has a priority over it.
@@ -11,7 +11,7 @@ Change [JsonschemaFormOpenHandler](jsonschema-form-extension/src/browser/jsonsch
 
 - only JSON files can be opened;
 - if a file name ends with `-data` (e.g.  `simple-data.json`) then the double-click on a file should open the JSON-form widget instead of the editor widget;
-  -  otherwise, the editor widget should be opened.
+- otherwise, the editor widget should be opened.
 
 ## The solution
 
