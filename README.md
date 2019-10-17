@@ -1,6 +1,6 @@
 # Exercise 3: Implement UI Schema Support for JSON-Form Widget
 
-[![Gitpod - code now](https://img.shields.io/badge/Gitpod-code%20now-blue.svg?longCache=true)](https://gitpod.io#https://github.com/TypeFox/theia-workshop/tree/solution-3)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/TypeFox/theia-workshop/tree/solution-3)
 
 [JsonschemaFormView](jsonschema-form-extension/src/browser/jsonschema-form-view.tsx) is a React component that allows building HTML forms based on JSON-schema for a JSON-file.
 If a JSON-file gets changed then an HTML form gets updated and vice versa. A JSON-schema file is referenced relative to a JSON-file via a special property `$schema`.
