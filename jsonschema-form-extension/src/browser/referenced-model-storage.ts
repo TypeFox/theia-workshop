@@ -2,7 +2,7 @@ import URI from "@theia/core/lib/common/uri";
 import * as jsoncparser from "jsonc-parser";
 import { MonacoTextModelService } from "@theia/monaco/lib/browser/monaco-text-model-service";
 import { MonacoEditorModel } from "@theia/monaco/lib/browser/monaco-editor-model";
-import { DisposableCollection, Emitter, Disposable } from "@theia/core";
+import { DisposableCollection, Emitter, Disposable, Path } from "@theia/core";
 import { JSONValue, JSONExt } from "@phosphor/coreutils";
 
 export class ReferencedModelStorage<T> implements Disposable {
@@ -58,12 +58,13 @@ export class ReferencedModelStorage<T> implements Disposable {
         if (!JSONExt.isObject(formData)) {
             return undefined;
         }
-        const uriString = formData[this.formDataProperty];
-        if (typeof uriString !== 'string') {
+        const value = formData[this.formDataProperty];
+        if (typeof value !== 'string') {
             return undefined;
         }
-        const uri = new URI(uriString);
-        return uri.path.isAbsolute ? uri : new URI(this.model.uri.toString()).parent.resolve(uri.path);
+        const uri = new URI(value);
+        const path = new Path(value);
+        return uri.scheme !== 'file' || path.isAbsolute ? uri : new URI(this.model.uri.toString()).parent.resolve(path);
     }
 
 }

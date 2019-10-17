@@ -24,6 +24,15 @@ export class JsonschemaFormView extends React.Component<JsonschemaFormView.Props
     }
 
     render(): JSX.Element | null {
+        // TODO: track and apply uiSchema to Form
+        // - Add `uiSchema` state to `JsonschemaFormView.State`.
+        //   - It should be of `UiSchema` type.
+        //   - Initialize it with an empty object `{}` in the constructor.
+        // - Pass `uiSchema` state as an attribute to `Form` react component.
+        // - Add a new instance of `ReferencedModelStorage` which tracks changes in `$uiSchema` attribute.
+        //   - Hint: Do it by analogy with `schemaStorage` property.
+        //   - List to its changes in `componentWillMount` method and udpate `uiSchema` state accordingly.
+        //   - Update the storage whenever the form data model is changed in `reconcileFormData` method.
         const { schema, formData } = this.state;
         return <Form
             schema={schema}
